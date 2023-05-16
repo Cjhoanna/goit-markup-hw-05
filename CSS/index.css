@@ -1,0 +1,244 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  margin-block-start: 0%;
+  margin-block-end: 0%;
+  padding-inline-start: 0%;
+  padding-inline-end: 0%;
+}
+.body {
+  font-family: Arial, sans-serif;
+}
+.bigtitle_section_page {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  padding: 200px 0;
+  background: #2f303a;
+  margin: auto;
+  width: 100%;
+}
+.bigtitle_section_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.bigtitle_section_btn {
+  color: #ffffff;
+  background: #2196f3;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* imagen de fondo */
+.divname {
+  background-image: url(../imagenes/imagen_header.jpg);
+  background-size: cover;
+}
+.section_list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.section_list_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-block-start: 53px;
+}
+.section_title {
+  color: #212121;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 30px;
+}
+.text_list {
+  color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.what_we_do {
+  padding-bottom: 94px;
+}
+.what_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.main_imagin {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.our_title {
+  margin: 50px;
+}
+.our_team {
+  background-color: #f5f4fa;
+  color: #212121;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our_team_card:hover {
+  border-radius: 4px;
+  cursor: pointer;
+}
+.our_team_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 37px;
+}
+.our_box {
+  padding: 30px 32px;
+}
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.footer_text_container {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  list-style: none;
+}
+.personal_name {
+  color: #212121;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.job_role {
+  color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 16px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.our_team_icons {
+  display: flex;
+  justify-content: center;
+}
+.our_team_icon {
+  list-style: none;
+  width: 44px;
+  height: 44px;
+}
+.our_team_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.our_team_icons .our_team_social:hover,
+.our_team_icons .our_team_social:focus {
+  background-color: #2196f3;
+  border-radius: 45px;
+}
+.our_team_social:hover .icon,
+.our_team_social:focus .icon {
+  fill: #ffffff;
+}
+.company01 {
+  width: 100px;
+  height: 100px;
+  fill: #afb1b8;
+}
+.company01:hover {
+  fill: #2196f3;
+}
+.svg_company {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.title_regular_customers {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-block-start: 94px;
+  margin-block-end: 50px;
+}
+.border_customers_inline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  margin-right: 94px auto;
+  cursor: pointer;
+  margin-block-end: 94px;
+}
+.border_customers_inline:hover,
+.border_customers_inline:focus {
+  background: #ffffff;
+  border-color: #2196f3;
+}
+.main_regular_customers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside_footer_title {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
