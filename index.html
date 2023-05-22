@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gostatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -16,20 +16,21 @@
     <link rel="stylesheet" href="./CSS/compartidos.css" type="text/css" />
     <link rel="stylesheet" href="./CSS/index.css" type="text/css" />
     <title>WEB ESTUDIO</title>
-  </head>
+   </head>
+  <body>
     <header class="header_section">
-        <div class="header_container container">
+        <div class="header_container container_contact">
           <nav class="menu">
             <a class="logo" href="index.html">WEBSTUDIO</a>
             <ul class="menu_list">
               <li>
-                <a href="studio.html" class="menu_link">studio</a>
+                <a href="./index.html" class="menu_link">studio</a>
               </li>
               <li>
-                <a href="portafolio.html" class="menu_link">portfolio</a>
+                <a href="./portafolio.html" class="menu_link">portfolio</a>
               </li>
               <li>
-                <a href="contacts.html" class="menu_link">contacts</a>
+                <a href="#" class="menu_link">contacts</a>
               </li>
             </ul>
           </nav>
@@ -56,8 +57,17 @@
     <main>
       <section class="bigtitle_section_page divname">
         <div class="bigtitle_section_container container">
-          <h2>EFFECTIVE SOLUTIONS FOUR YOUR BUSINESS</h2>
-          <button type="button" class="bigtitle_section_btn">Request our service</button>
+          <h2 class="letter">EFFECTIVE SOLUTIONS FOUR YOUR BUSINESS</h2>
+          <button data-modal-open type="button" class="bigtitle_section_btn botton_letter">Request our service</button>
+          <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+              <button data-modal-close class="modal_button"> 
+                <svg class="close">
+                  <use  href="./imagenes/svg/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -119,26 +129,32 @@
         <div class="container">
           <h2 class="what_title">What we do</h2>
           <ul class="main_imagin ">
-            <li>
+            <li class="what_item">
             <img
               src="./imagenes/imagen1.jpg"
               alt="innovacion"
-              width="370"        
+              width="370"
+              height="294"         
             />
+            <p class="what_text">DESKTOP APPS</p>
             </li>
-            <li>
+            <li class="what_item">
             <img
               src="./imagenes/imagen2.jpg"
               alt="creatividad"
-              width="370"         
+              width="370"
+              height="294"         
             />
+            <p class="what_text">MOBILE APPS</p>
             </li>
-            <li>
+            <li class="what_item">
             <img
               src="./imagenes/imagen3.jpg"
               alt="creatividad"
-              width="370"         
+              width="370"
+              height="294"  
             />
+            <p class="what_text">DESIGN SOLUTIONS</p>
             </li>
           </ul>
         </div>
@@ -415,5 +431,6 @@
             </div>
           </aside>
     </footer>
+    <script src="./Js/modal.js"></script>
   </body>
 </html>

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 ul {
   margin: 0;
   padding: 0;
@@ -88,7 +91,55 @@ ul {
   border: 1px solid #eeeeee;
   border-radius: 0px 0px 4px 4px;
 }
-.card:hover {
+.card_body {
+  padding: 20px 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+.card_title {
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.card_description {
+  display: flex;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
+/* caja sobre puesta */
+.card_emergent {
+  position: absolute;
+  top: 0;
+  height: 294px;
+  width: 370px;
+  font-family: roboto;
+  background: rgba(33, 150, 243, 0.9);
+  letter-spacing: 0, 03em;
+  color: #ffffff;
+  padding: 63px 24px;
+
+  transform: transLateY(190%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover .card_emergent {
+  transform: translateY(0%);
+}
+.card_animation {
+  overflow: hidden;
+  position: relative;
+}
+.card:hover,
+.card:focus {
   border: 1px solid #2196f3;
   cursor: pointer;
 }
